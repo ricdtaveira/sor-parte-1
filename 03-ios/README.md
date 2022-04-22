@@ -15,7 +15,7 @@ A partir do terminal da CLI (Interface de Linha de Comando) é possível entrar 
 O `Modo User EXEC` é o modo de operação inicial. A partir desse modo de execução é possível ter acesso a um numero limitado de comandos básicos de monitoramento. Para avançar para o `Modo EXEC Privilegiado` entrar com o comando `enable`.
 >
 >
-`Prompt em um Switch e em um Roteador`
+`Prompt em um Switch ou em um Roteador`
 >
 ```
 Switch>
@@ -47,7 +47,7 @@ Router#configure terminal
 Router(config)# 
 ````
 >
-`Prompt em um Switch e em um Roteador`
+`Prompt em um Switch ou em um Roteador`
 >
 ```
 Switch#
@@ -59,24 +59,70 @@ Router#
 Nesse modo o usuário pode configurar um dispositivo. 
 >
 >
-Para retornar para o `Modo EXEC Privilegiado` digitar o comando `exit`.
->
-
-
->
-`Prompt em um Switch e em um Roteador`
+`Prompt em um Switch ou em um Roteador`
 >
 ```
 Switch(config)#
 Router(config)# 
 ````
-Global Configuration Mode ou Modo de Configuração Global
-Nesse modo o usuário pode configurar um dispositivo.
-Prompt
-Switch(config)#
-Router(config)#
+>
+Para retornar para o `Modo EXEC Privilegiado` digitar o comando `exit`.
+>
+>
+Para entrar no `Modo EXEC Privilegiado` digitar o comando `exit`.
+>
+
+#### Interface Subconfiguration Mode ou Modo de Configuração de Interface
+>
+Nesse Modo o usuário configura a porta de um Switch ou uma interface de um roteador.
+>
+
+`Prompt em um Switch ou em um Roteador
+Switch(config-if)#
+Router(config-if)#
+>
+Para entrar no `Modo de Subconfiguração de Interface` digitar o comando `interface <nome_da_interface><numero da interface`
+>
+
+`Prompt de uma configuração de interface em um Roteador
+```
+R1(config)# interface gigabitEthernet 0/1
+R1(config-if)# ip address 192.168.10.1 255.255.255.0
+R1(config-if)# no shutdown
+```
 
 
+`Prompt de uma configuração de uma VLAN em um Switch
+```
+S1(config)#interface vlan 1
+S1(config-if)#ip address 192.168.1.253 255.255.255.0
+S1(config-if)#no sh
+S1(config-if)#exit
+S1(config)#exit
+```
+
+>
+`Prompt de uma configuração de interface de console
+```
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname S1
+S1(config)#line console 0
+S1(config-line)#password cisco
+S1(config-line)#login
+S1(config-line)#exit
+```
+
+>
+Para entrar no
+Switch(config-if)#
+Router(config-if)#
+
+>
+Para entrar no
+Router(config-if)#
+>
+Para entrar no
 
 ### Transição dos Comandos IOS
 >
