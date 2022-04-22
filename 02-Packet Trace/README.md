@@ -4,7 +4,7 @@ Packet Trace é um software desenvolvido pela Cisco para projetar topologias ló
 >
 
 >
-Para fazer o download do Packet Trace é necessário criar uma conta no CISCO Academy. 
+Para fazer o download do Packet Trace é necessário criar uma conta no [CISCO Academy.](https://https://www.netacad.com/).
 >
 
 
