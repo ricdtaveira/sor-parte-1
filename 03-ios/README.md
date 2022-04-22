@@ -84,7 +84,7 @@ Router(config-if)#
 Para entrar no `Modo de Subconfiguração de Interface` digitar o comando `interface <nome_da_interface><numero da interface`
 >
 
-`Prompt de uma configuração de interface em um Roteador
+`Prompt de uma configuração de interface em um Roteador`
 ```
 R1(config)# interface gigabitEthernet 0/1
 R1(config-if)# ip address 192.168.10.1 255.255.255.0
@@ -92,7 +92,7 @@ R1(config-if)# no shutdown
 ```
 
 
-`Prompt de uma configuração de uma VLAN em um Switch
+`Configuração de uma VLAN em um Switch`
 ```
 S1(config)#interface vlan 1
 S1(config-if)#ip address 192.168.1.253 255.255.255.0
@@ -102,7 +102,7 @@ S1(config)#exit
 ```
 
 >
-`Prompt de uma configuração de interface de console
+`Configuração de uma porta de console`
 ```
 Switch>enable
 Switch#configure terminal
