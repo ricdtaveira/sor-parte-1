@@ -17,3 +17,31 @@ A configuração de um dispositivo de Rede (Switch ou Roteador) inicia com a ent
 Router> enable
 Router# 
 ```
+
+#### Exibir Informações das Interfaces do Roteador ####
+>
+
+>
+```
+Router> enable
+Router# 
+```
+
+#### Exibir uma lista resumida das Interfaces do Roteador ####
+>
+
+>
+```
+Router> enable
+Router# 
+```
+
+#### Exibir uma lista resumida das Interfaces do Roteador ####
+>
+
+>
+```
+Router> enable
+Router# 
+```
+
