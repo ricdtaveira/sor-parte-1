@@ -1,4 +1,4 @@
-## IOS (Internet Operating System)##
+## IOS (Internet Operating System)
 
 ### Introdução 
 >
@@ -29,6 +29,23 @@ Nesse modo o usuário pode usar qualquer comando de monitoramento e pode executa
 >
 Para retornar para o `Modo User EXEC` digitar o comando `disable`.
 >
+```
+Switch#disable 
+Switch>
+
+Router#disable
+Router>
+````
+>
+Para entrar no `Modo Configuração Global` digitar o comando `configure terminal`.
+>
+```
+Switch#configure terminal
+Switch(config)#
+
+Router#configure terminal
+Router(config)# 
+````
 >
 `Prompt em um Switch e em um Roteador`
 >
@@ -37,7 +54,31 @@ Switch#
 Router# 
 ````
 
-### Estrutura dos Comandos IOS
+#### Global Configuration Mode ou Modo de Configuração Global
+>
+Nesse modo o usuário pode configurar um dispositivo. 
+>
+>
+Para retornar para o `Modo EXEC Privilegiado` digitar o comando `exit`.
+>
+
+
+>
+`Prompt em um Switch e em um Roteador`
+>
+```
+Switch(config)#
+Router(config)# 
+````
+Global Configuration Mode ou Modo de Configuração Global
+Nesse modo o usuário pode configurar um dispositivo.
+Prompt
+Switch(config)#
+Router(config)#
+
+
+
+### Transição dos Comandos IOS
 >
 A figura abaixo apresenta um diagrama que onde comandos executam transições de estado e executam operações de configuração.   
 >
